@@ -1,0 +1,168 @@
+@font-face {
+    font-family: GT America Standard Regular;
+    src: url("../../Fonts/GT-America/GT-America-Standard-Regular-Trial.otf");
+}
+
+@font-face {
+    font-family: 'Canela Deck Web';
+    src: url("../../Fonts/Canela-Deck-Family/CanelaDeck-Bold-Trial.otf");
+
+}
+
+.historymain {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0e0e0e;
+
+    .historytop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 48px;
+        color: #f3f4f4;
+        position: relative;
+
+
+
+
+        .topleft h1 {
+            font-family: Canela Deck Web;
+            font-size: 56px;
+            line-height: 1.2;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -.1px;
+        }
+
+        .topright {
+            flex: 1;
+            margin-left: 40px;
+            margin-right: 50px;
+            margin-top: 45px;
+
+            p {
+                font-family: GT America Standard Regular;
+                font-size: 18px;
+                line-height: 1.5;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: -.1px;
+
+                span {
+                    border-bottom: 1px solid;
+                    font-family: GT America Standard Bold;
+                    font-weight: 700;
+                    line-height: 1.5;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+            }
+        }
+
+        .topright .explore-btn {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+
+        }
+
+        .topright img {
+            max-width: 40px;
+            margin-right: 10px;
+
+        }
+
+        .topright h6 {
+            font-size: 18px;
+            margin: 0;
+            cursor: pointer;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        &::after {
+            border-bottom: 5px solid #f3f4f4;
+            content: "";
+            height: 5px;
+            position: absolute;
+            bottom: -15px;
+            width: 100%;
+        }
+
+    }
+
+    .historymid {
+        display: flex;
+        margin-top: 10%;
+        color: #f3f4f4;
+
+
+        .midleft {
+            margin-left: 7%;
+            margin-right: 3%;
+
+            img {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .midright {
+            flex: 1;
+            margin-right: 30px;
+
+        }
+
+        .midright .text {
+            margin-bottom: 20px;
+            margin-right: 7%;
+        }
+
+        .midright .text p {
+            font-family: GT America Standard Regular;
+            font-size: 18px;
+            line-height: 1.8;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -.1px;
+        }
+
+        .midright .text span {
+            border-bottom: 1px solid;
+            font-family: GT America Standard Bold;
+            font-weight: 700;
+            line-height: 1.5;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    /* Additional styles to make the component visually appealing */
+    .historymain {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .historymid {
+        align-items: center;
+    }
+
+    .historymid .midleft,
+    .historymid .midright {
+        flex-basis: 50%;
+    }
+
+    .carddata {
+        display: flex;
+        margin-top: 12%;
+    }
+}

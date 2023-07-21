@@ -1,0 +1,92 @@
+/* Commucard.scss */
+
+.commucard {
+  position: relative;
+  /* Add relative positioning to make sure gradient is applied within this container */
+  background: url("https://www.harvard.edu/wp-content/uploads/2021/02/022020_Ceramics_142.jpeg") no-repeat;
+  background-color: black;
+  background-size: cover;
+  color: white;
+  width: 100vw;
+  height: 70vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #0e0e0e 0, transparent);
+  }
+}
+
+.main {
+  position: relative;
+  /* Add position relative to establish a containing block for absolute positioning */
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  /* Add position relative to h3 for absolute positioning */
+  transition: ease-in-out 0.1s; /* Add transition for smooth movement */
+}
+
+.paragraph-container {
+  position: absolute;
+  top: 100%; /* Initially hide the paragraph at the bottom */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+  display: flex; /* Add display flex to align paragraph in the center */
+  justify-content: center; /* Add justify-content center to align paragraph in the center */
+  align-items: center; /* Add align-items center to align paragraph in the center */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    // margin-left: -70px;
+    visibility: hidden;
+  }
+}
+
+
+
+.commucard:hover p {
+  visibility: visible; 
+}
+.commucard:hover h3 {
+  margin-bottom: 80px;
+  text-decoration: underline;
+}
+
+.next {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.next p {
+  visibility: visible;
+}
+
+.commucard:hover .paragraph-container {
+  top: 50%; /* Show the paragraph by moving it down to 50% */
+}
+
+.commucard:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}

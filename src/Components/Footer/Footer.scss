@@ -1,0 +1,126 @@
+@font-face {
+    font-family: GT America Standard;
+    src: url("../../Fonts/GT-America/GT-America-Standard-Bold-Trial.otf");
+}
+
+@font-face {
+    font-family: GT America Standard Regular;
+    src: url("../../Fonts/GT-America/GT-America-Standard-Regular-Trial.otf");
+}
+
+// Global styles for the footer
+footer {
+    background-color: #0e0e0e;
+    color: #8996a0;
+    padding-top: 64px;
+    position: relative;
+    z-index: 2;
+   
+
+    // Styles for the top section
+    .topmain {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        .footertop {
+            h2 {
+                color: #f3f4f4;
+                font-family: GT America Standard;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 1.5;
+                padding-bottom: 8px;
+                text-align: center;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                font-family: 'GT America Standard Regular', sans-serif;
+                font-size: 18px;
+                line-height: 1.5;
+                font-weight: 400;
+                margin-bottom: 8px;
+
+                li {
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                    transition: color 0.3s, border-bottom 0.3s;
+                    display: block;
+                    width: fit-content;
+
+                    &:hover {
+                        color: #fff;
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    // Styles for the bottom section
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        p {
+            font-family: 'GT America Standard Regular', sans-serif;
+            font-size: 18px;
+            margin-top: 60px;
+        }
+        .logo{
+
+        
+        img {
+            width: 200px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 70px;
+            margin-top: -30px;
+            cursor: pointer;
+        }}
+
+        .socaillink {
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                font-family: 'GT America Standard Regular', sans-serif;
+                font-size: 18px;
+                line-height: 1.5;
+                font-weight: 400;
+                margin-bottom: 8px;
+                margin-top: 60px;
+
+                li {
+
+                    cursor: pointer;
+                    transition: color 0.3s, border-bottom 0.3s;
+                    display: block;
+                    width: fit-content;
+                    margin-left: 5px;
+                    margin-right: 10px;
+                   
+
+                    &:hover {
+                        color: #fff;
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}

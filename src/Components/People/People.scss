@@ -1,0 +1,212 @@
+// People.scss
+@font-face {
+    font-family: GT America Standard Regular;
+    src: url("../../Fonts/GT-America/GT-America-Standard-Regular-Trial.otf");
+}
+
+@font-face {
+    font-family: 'Canela Deck Web';
+    src: url("../../Fonts/Canela-Deck-Family/CanelaDeck-Bold-Trial.otf");
+
+}
+
+
+
+.harvardpeople {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f3f4f4;
+    position: relative;
+
+
+    .leftpeople {
+        flex: 1;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 80px;
+
+        h1 {
+            font-family: Canela Deck Web;
+            font-size: 56px;
+            line-height: 1.2;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -.1px;
+            white-space: nowrap;
+            margin-top: -30px;
+
+        }
+
+    }
+
+
+    .rightpeople {
+        flex: 2;
+        padding: 0 25px;
+        margin-bottom: 40px;
+
+        p {
+            font-family: GT America Standard Regular;
+            font-size: 18px;
+            line-height: 1.5;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -.1px;
+            color: #1e1e1e;
+
+            span {
+                color: black;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &::after {
+        border-bottom: 5px solid #1e1e1e;
+        content: "";
+        height: 5px;
+        position: absolute;
+        bottom: 40px;
+        width: 95%;
+    }
+
+}
+
+.secondpart {
+    display: flex;
+    padding-top: 40px;
+    position: relative;
+    margin-bottom: 50px;
+
+    .secleft {
+        padding: 0 20px;
+        text-align: center;
+        width: 50%;
+        margin-top: 60px;
+
+
+        img {
+            width: 86%;
+            height: auto;
+        }
+    }
+
+    .secright {
+        text-align: left;
+        width: 50%;
+        margin-left: -20px;
+
+        .details {
+
+
+            h1 {
+                font-size: 48px;
+                color: #a51c30;
+                font-family: Canela Deck Web;
+                font-size: 48px;
+                line-height: 1.2;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: -.1px;
+            }
+
+            p {
+                font-family: GT America Standard Regular;
+                font-size: 18px;
+                line-height: 1.5;
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: -.1px;
+                color: #1e1e1e;
+                text-transform: none;
+                margin-top: -30px;
+            }
+        }
+
+        p {
+            font-family: GT America Standard Regular;
+            font-size: 18px;
+            line-height: 1.5;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: -0.1px;
+            color: #1e1e1e;
+            margin-top: 60px;
+
+            span {
+                color: black;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+.footerpara {
+    margin-left: 15px;
+
+    p {
+        font-family: GT America Standard Regular;
+        font-size: 18px;
+        line-height: 1.5;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -.1px;
+        color: #1e1e1e;
+
+        span {
+            border-bottom: 1px solid;
+            font-family: GT America Standard Bold;
+            font-weight: 700;
+            line-height: 1.5;
+            cursor: pointer;
+
+            &:hover {
+                color: #a51c30;
+            }
+        }
+    }
+}
+
+/* Styling for the outer container */
+.peoplefooter {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    
+
+    .footerdetails h1 {
+        font-family: GT America Standard Bold;
+        font-size: 24px;
+        line-height: 1.4;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -.1px;
+        cursor: pointer;
+    }
+
+    .footerdetails p {
+        font-family: GT America Standard Regular;
+        font-size: 18px;
+        line-height: 1.5;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -.1px;
+        color: #1e1e1e;
+    }
+
+    /* Styling for the span element inside the first component */
+    .peoplefooter span {
+        font-style: italic;
+        color: #888;
+    }
+}
+

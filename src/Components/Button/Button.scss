@@ -1,0 +1,25 @@
+.buttonbtn{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    margin-top: 20px;
+    p{
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+
+    button{
+        border: none;
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+        color: #292c2f;
+        transition: all .3s;
+        font-size: 15px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
